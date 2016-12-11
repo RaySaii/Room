@@ -1,0 +1,46 @@
+{
+  "name": "Message",
+  "plural": "messages",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "posted_on": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "chatUser": {
+      "type": "belongsTo",
+      "model": "ChatUser",
+      "foreignKey": ""
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "ChatUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
