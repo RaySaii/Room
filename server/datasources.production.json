@@ -1,0 +1,12 @@
+{
+    "mongodb": {
+        "host": "",
+        "port": 0,
+        "url": "mongodb://db1.daocloudinternal.io:60314",
+        "database": "",
+        "password": "FW2aphb3",
+        "name": "mongodb",
+        "user": "admin",
+        "connector": "mongodb"
+    }
+}

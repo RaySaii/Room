@@ -6,11 +6,11 @@
     "mongodb": {
         "host": "",
         "port": 0,
-        "url": "mongodb://db1.daocloudinternal.io:60314",
+        "url": "mongodb://localhost:27017",
         "database": "",
-        "password": "FW2aphb3",
+        "password": "",
         "name": "mongodb",
-        "user": "admin",
+        "user": "",
         "connector": "mongodb"
     },
     "email": {
