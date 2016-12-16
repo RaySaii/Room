@@ -2,9 +2,9 @@
     "mongodb": {
         "host": "",
         "port": 0,
-        "url": "mongodb://db1.daocloudinternal.io:60314",
-        "database": "",
-        "password": "FW2aphb3",
+        "url": "mongodb://ds052819.mlab.com:52819/roomdata",
+        "database": "roomdata",
+        "password": "123",
         "name": "mongodb",
         "user": "admin",
         "connector": "mongodb"
