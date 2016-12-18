@@ -4,12 +4,13 @@
         "connector": "memory"
     },
     "mongodb": {
-        "host": "db2.daocloudinternal.io",
-        "port": 60223,
-        "database": "temp_db",
-        "password": "854hRfMY7Ed",
+        "host": "",
+        "port": 0,
+        "url": "mongodb://localhost:27017/Chat",
+        "database": "Chat",
+        "password": "",
         "name": "mongodb",
-        "user": "admin",
+        "user": "",
         "connector": "mongodb"
     },
     "email": {
