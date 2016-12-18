@@ -10,4 +10,4 @@ ENV NODE_ENV production
 
 EXPOSE 3000
 
-CMD [ "slc","run","."]  
+CMD npm run build:js && node . 
