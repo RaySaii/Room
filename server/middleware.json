@@ -55,6 +55,11 @@
                 "name": "login",
                 "paths": ["/login"],
                 "params": "$!../client/dist/"
+            },
+            {
+                "name": "register",
+                "paths": ["/register"],
+                "params": "$!../client/dist/"
             }
         ]
     },
