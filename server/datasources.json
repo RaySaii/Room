@@ -6,11 +6,11 @@
     "mongodb": {
         "host": "",
         "port": 0,
-        "url": "mongodb://localhost:27017/Chat",
-        "database": "Chat",
-        "password": "",
+        "url": "mongodb://ds052819.mlab.com:52819/roomdata",
+        "database": "roomdata",
+        "password": "123",
         "name": "mongodb",
-        "user": "",
+        "user": "admin",
         "connector": "mongodb"
     },
     "email": {
