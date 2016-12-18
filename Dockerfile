@@ -7,7 +7,6 @@ COPY . /usr/src/app
 
 RUN npm install --production
 # ENV NODE_ENV production
-RUN user$ mongo --host localhost --port 27017
 
 EXPOSE 3000
 
