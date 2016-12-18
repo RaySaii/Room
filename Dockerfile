@@ -6,8 +6,8 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 
 RUN npm install --production
-ENV NODE_ENV production
+# ENV NODE_ENV production
 
 EXPOSE 3000
 
-CMD npm run build:js && node . 
+CMD [ "node","server/server.js"]  
