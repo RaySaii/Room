@@ -4,14 +4,9 @@
         "connector": "memory"
     },
     "mongodb": {
-        "host": "",
-        "port": 0,
-        "url": "mongodb://localhost:27017/Chat",
-        "database": "Chat",
-        "password": "",
-        "name": "mongodb",
-        "user": "",
-        "connector": "mongodb"
+        "defaultForType": "mongodb",
+        "connector": "loopback-connector-mongodb",
+        "url": "mongodb://admin:123@ds052819.mlab.com:52819/roomdata"
     },
     "email": {
         "name": "email",
