@@ -55,7 +55,6 @@ boot(app, __dirname, function(err) {
         socket.on('info', function(id, name) {
             socket.userId = id;
             socket.username = name
-            console.log('info', socket.userId, socket.username);
             app.io.emit('come', socket.userId);
         })
         socket.on('check', function() {
@@ -65,7 +64,6 @@ boot(app, __dirname, function(err) {
             app.io.emit('myId', userId);
         })
         socket.on('join', function(room) {
-                console.log('joining room', room);
                 socket.join(room);
                 rooms[i++] = room
             })
@@ -83,12 +81,10 @@ boot(app, __dirname, function(err) {
                     msg: msg
                 });
             } else {
-                console.log('服务器收到信息并向这个', roomId, '发送信息');
                 app.io.to(roomId).emit('message', msg);
             }
         })
         socket.on('disconnect', function() {
-            console.log(socket.username, socket.userId);
             app.io.emit('leave', socket.userId);
             // app.models.ChatUser.findById(socket.userId,function (err,res) {
             //     res.online=false;
