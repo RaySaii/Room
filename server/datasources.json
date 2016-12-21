@@ -4,11 +4,10 @@
         "connector": "memory"
     },
     "mongodb": {
-        "host": "",
-        "port": 0,
-        "url": "mongodb://db1.daocloudinternal.io:60314",
-        "database": "",
-        "password": "FW2aphb3",
+        "host": "db2.daocloudinternal.io",
+        "port": 60223,
+        "database": "temp_db",
+        "password": "854hRfMY7Ed",
         "name": "mongodb",
         "user": "admin",
         "connector": "mongodb"
